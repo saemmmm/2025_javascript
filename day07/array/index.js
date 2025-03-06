@@ -13,11 +13,8 @@ const menu = [
   { name: "수박", price: 5000},
 ]
 
-// 해당 조건에 만족하는 요소가 있으면 돌려주고 없으면
-const c = menu.find((x) => {
-  return x.price == 4000 || ;
-});
-console.log(c);
+// 해당 조건에 만족하는 요소가 있으면 돌려주기 없으면 undefined
+const c = menu.find((x) => x.price == 4000 || x.price == 4500);
 
 const num1 = [3, 6, 9, 12, 15]
 
